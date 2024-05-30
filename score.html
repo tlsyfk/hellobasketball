@@ -1,0 +1,626 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>score</title>
+	<style type="text/css">
+			
+			#first { padding: 0px 0px 00px 1700px; word-spacing: 20pt; font-weight: bold;}
+		#second {font-size: 22px; color: black;    padding: 1px 0px 20px 560px; font-weight: 700;  text-decoration: none; position: relative; display:flex; word-spacing: 100pt;}
+		 a {text-decoration: none; color: black; float: center;   }
+
+		
+
+		header {text-align: center; font-size: 20px; padding:0px;  margin-right: 35%; margin-left: 35%;}
+		header a:hover {color: orange; text-decoration: blink; transition: all.8s; }
+		#first a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .5s ease-out;
+		}
+		#first a:hover {color: orange; text-decoration: none; transition: all.4s;}
+		#second a:hover {color: orange; text-decoration: none; transition: all.50s; }
+		#second a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; transform: 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+		header a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+	
+		#line1 {margin-left: 25%; margin-right: 23%;}
+		#line2 {margin-left: 10%; margin-right: 10%; }
+
+
+		
+		td {text-align: center;}
+		#score1 {text-align: center;  table-layout: auto; border-collapse: collapse;
+			border-spacing: 8px; margin: 50px 20px 20px 550px;}
+		
+		#score2 {text-align: center;  table-layout: auto; border-collapse: collapse;
+			border-spacing: 8px; margin: 10px 20px 20px 550px;}
+		#score3 {text-align: center;  table-layout: auto; border-collapse: collapse;
+			border-spacing: 8px; margin: 10px 20px 150px 550px;}
+
+	</style>
+</head>
+<body>
+<header>
+	<table>
+		<tr>
+			<td>
+				<a href="main.html"><img src="img/농구있네로고.png" width="200" style="margin: 0px 0px 0px 20px;"></a>
+			</td>
+		
+		
+			<td>
+				<a href="main.html"><h1>농구 있네</h1></a>
+
+			</td>
+
+		</tr>
+	</table>
+
+
+
+</header>
+
+
+
+	<nav>
+	<table id="first">
+	<tr id="abc">
+		<td>
+		<a href="login.html">로그인</a>
+		<a href="sign.html">회원가입</a>
+
+		</td>
+	
+	</tr>
+	</table>
+
+	<table id="second">
+
+	<tr>
+		<td>
+			<a href="introduce.html">인사말</a>	 
+		
+
+		
+			<a href="term.html">농구용어</a>	 
+		
+
+		
+			<a href="score.html">프로리그성적</a>	 
+		
+
+		
+		
+			<a href="hilight.html">하이라이트</a>	 
+
+		</td>
+
+	</tr>
+
+
+	</table>
+</nav>
+<hr id="line1">
+
+
+	<article>
+		<h3 style="text-align: center; padding: 40px 0px 0px 0px;">팀 순위</h3>
+		<table border="1" id="score1" >
+		<tr>
+			<th style="background-color: #B5B2FF;">순위</th>
+			<th style="background-color: #D1B2FF;">팀</th>
+			<th>경기수</th>
+			<th>승률</th>
+			<th>승</th>
+			<th>패</th>
+			<th>승차</th>
+			<th>득점</th>
+			<th>AS</th>
+			<th>리바운드</th>
+			<th>스틸</th>
+			<th>블록</th>
+			<th>3점슛</th>
+			<th>자유투</th>
+			<th>자유투성공</th>
+
+		</tr>
+
+		<tr>
+			<td style="background-color: #FF3232">1</td>
+			<td style="background-color: #FF3232">서울 SK</td>
+			<td>54</td>
+			<td>0.741</td>
+			<td>40</td>
+			<td>14</td>
+			<td>0.0</td>
+			<td>85.7</td>
+			<td>18.6</td>
+			<td>42.3</td>
+			<td>7.5</td>
+			<td>3.0</td>
+			<td>7.1</td>
+			<td>11.9</td>
+			<td>72.02</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #FF3232">2</td>
+			<td style="background-color: #FF3232">수원 KT</td>
+			<td>54</td>
+			<td>0.685</td>
+			<td>37</td>
+			<td>17</td>
+			<td>3.0</td>
+			<td>83.7</td>
+			<td>18.9</td>
+			<td>40.6</td>
+			<td>6.8</td>
+			<td>3.1</td>
+			<td>8.2</td>
+			<td>11.2</td>
+			<td>71.34</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #51FFA6">3</td>
+			<td style="background-color: #51FFA6">안양 KGC</td>
+			<td>54</td>
+			<td>0.593</td>
+			<td>32</td>
+			<td>22</td>
+			<td>8.0</td>
+			<td>83.4</td>
+			<td>19.9</td>
+			<td>36.4</td>
+			<td>7.4</td>
+			<td>2.7</td>
+			<td>11.2</td>
+			<td>9.8</td>
+			<td>68.93</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #51FFA6">4</td>
+			<td style="background-color: #51FFA6">울산 현대 모비스</td>
+			<td>54</td>
+			<td>0.556</td>
+			<td>30</td>
+			<td>24</td>
+			<td>10.0</td>
+			<td>80.8</td>
+			<td>20.7</td>
+			<td>39.5</td>
+			<td>7.1</td>
+			<td>3.6</td>
+			<td>6.8</td>
+			<td>11.6</td>
+			<td>69.90</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #DCFFDC;">5</td>
+			<td style="background-color: #DCFFDC;">고양 오리온</td>
+			<td>54</td>
+			<td>0.500</td>
+			<td>27</td>
+			<td>27</td>
+			<td>13.0</td>
+			<td>79.0</td>
+			<td>17.4</td>
+			<td>35.7</td>
+			<td>7.9</td>
+			<td>2.4</td>
+			<td>7.2</td>
+			<td>11.2</td>
+			<td>74.38</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #DCFFDC;">6</td>
+			<td style="background-color: #DCFFDC;">대구 한국가스공사</td>
+			<td>54</td>
+			<td>0.500</td>
+			<td>27</td>
+			<td>27</td>
+			<td>13.0</td>
+			<td>82.2</td>
+			<td>18.1</td>
+			<td>35.9</td>
+			<td>5.8</td>
+			<td>1.3</td>
+			<td>9.6</td>
+			<td>10.6</td>
+			<td>75.50</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #9DCFFF;">7</td>
+			<td style="background-color: #9DCFFF;">창원 LG</td>
+			<td>54</td>
+			<td>0.444</td>
+			<td>24</td>
+			<td>30</td>
+			<td>16.0</td>
+			<td>77.4</td>
+			<td>16.0</td>
+			<td>39.6</td>
+			<td>7.5</td>
+			<td>1.8</td>
+			<td>7.6</td>
+			<td>10.8</td>
+			<td>64.38</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #9DCFFF;">8</td>
+			<td style="background-color: #9DCFFF;">원주 DB</td>
+			<td>54</td>
+			<td>0.741</td>
+			<td>23</td>
+			<td>31</td>
+			<td>17.0</td>
+			<td>79.4</td>
+			<td>18.4</td>
+			<td>39.8</td>
+			<td>6.4</td>
+			<td>3.0</td>
+			<td>7.7</td>
+			<td>9.9</td>
+			<td>72.67</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #9DCFFF;">9</td>
+			<td style="background-color: #9DCFFF;">전주 KCC</td>
+			<td>54</td>
+			<td>0.389</td>
+			<td>21</td>
+			<td>33</td>
+			<td>19.0</td>
+			<td>81.1</td>
+			<td>17.7</td>
+			<td>36.0</td>
+			<td>5.5</td>
+			<td>2.0</td>
+			<td>8.0</td>
+			<td>12.5</td>
+			<td>74.31</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #9DCFFF;">10</td>
+			<td style="background-color: #9DCFFF;">서울 삼성</td>
+			<td>54</td>
+			<td>0.167</td>
+			<td>9</td>
+			<td>45</td>
+			<td>31.0</td>
+			<td>74.1</td>
+			<td>15.8</td>
+			<td>38.4</td>
+			<td>5.6</td>
+			<td>2.3</td>
+			<td>6.8</td>
+			<td>10.4</td>
+			<td>71.79</td>
+		</tr>
+		</table>
+		<br><br>
+		<hr id="line2">
+		<br>
+
+<h3 style="text-align: center;">주요 부문 선두</h3>
+<table border="1" id="score2">
+	<tr>
+		<td style="background-color: #D4F4FA; font-weight: bold;">득점 평균</td>
+		<td style="background-color: #D4F4FA; font-weight: bold;">도움 평균</td>
+		<td style="background-color: #D4F4FA; font-weight: bold;">리바운드 평균</td>
+		<td style="background-color: #D4F4FA; font-weight: bold;">3점슛 평균</td>
+
+	</tr>
+
+
+	<tr>
+		<td> 
+			<img src="img/자밀 워니.jpg" > 
+			<div style="float: right;">자밀 워니
+			<br>포워드<br>서울 SK 나이츠<br><span style="color: #FF3636;">22.09</span>
+
+			</div>
+
+
+		</td>
+		<td>
+		<img src="img/김시래.jpg" > 
+			<div style="float: right;">김시래
+			<br>가드<br>서울 삼성 썬더스<br><span style="color: #FF3636;">5.85</span>
+
+			</div>
+		</td>
+
+		<td>
+		<img src="img/아셈 마레이.jpg" > 
+			<div style="float: right;">아셈 마레이
+			<br>센터<br>창원 LG 세이커스<br><span style="color: #FF3636;">13.47</span>
+
+			</div>
+		</td>
+
+		<td>
+		<img src="img/양홍석.jpg" > 
+			<div style="float: right;">양홍석
+			<br>가드<br>수원 KT 소닉붐<br><span style="color: #FF3636;">39.51</span>
+
+			</div>
+		</td>
+
+	</tr>
+
+
+</table>
+
+
+
+
+
+
+<hr id="line2">
+
+	<h3 style="text-align: center;">선수 순위</h3>
+		<table border="1" id="score3">
+			
+			<tr>
+				<th style="background-color: #B5B2FF;">순위</th>
+				<th style="background-color: #D1B2FF;">선수</th>
+				<th>경기수</th>
+				<th>득점</th>
+				<th>AS</th>
+				<th>리바운드</th>
+				<th>스틸</th>
+				<th>블록</th>
+				<th>2점슛</th>
+				<th>3점슛</th>
+				<th>자유투</th>
+				<th>야투성공</th>
+				<th>3점슛성공</th>
+				<th>자유투성공</th>
+			</tr>
+
+			<tr>
+				<td style="background-color: #FF3232; font-weight: bold;">1</td>
+				<td style="background-color: #FF3232; font-weight: bold;">자밀 워니</td>
+				<td>45</td>
+				<td>22.09</td>
+				<td>3.11</td>
+				<td>12.53</td>
+				<td>1.13</td>
+				<td>0.62</td>
+				<td>9.18</td>
+				<td>0.31</td>
+				<td>2.80</td>
+				<td>51.63</td>
+				<td>25.93</td>
+				<td>74.56</td>
+			</tr>
+
+			<tr>
+				<td style="background-color: #FF3232; font-weight: bold;">2</td>
+				<td style="background-color: #FF3232; font-weight: bold;">앤드류 니콜슨</td>
+				<td>41</td>
+				<td>20.85</td>
+				<td>0.93</td>
+				<td>7.61</td>
+				<td>0.61</td>
+				<td>0.37</td>
+				<td>6.51</td>
+				<td>1.83</td>
+				<td>2.34</td>
+				<td>52.05</td>
+				<td>38.07</td>
+				<td>78.05</td>
+
+			</tr>
+
+
+			<tr>
+				<td style="background-color: #51FFA6; font-weight: bold;">3</td>
+				<td style="background-color: #51FFA6; font-weight: bold;">오마리 스펠맨</td>
+				<td>43</td>
+				<td>20.23</td>
+				<td>3.40</td>
+				<td>10.35</td>
+				<td>1.05</td>
+				<td>1.56</td>
+				<td>4.95</td>
+				<td>2.63</td>
+				<td>2.44</td>
+				<td>47.04</td>
+				<td>36.45</td>
+				<td>60.34</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #51FFA6; font-weight: bold;">4</td>
+				<td style="background-color: #51FFA6; font-weight: bold;">라건아</td>
+				<td>54</td>
+				<td>18.81</td>
+				<td>1.96</td>
+				<td>10.94</td>
+				<td>0.54</td>
+				<td>0.87</td>
+				<td>7.00</td>
+				<td>0.89</td>
+				<td>2.15</td>
+				<td>59.66</td>
+				<td>38.10</td>
+				<td>76.82</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #DCFFDC; font-weight: bold;">5</td>
+				<td style="background-color: #DCFFDC; font-weight: bold;">캐디 라렌</td>
+				<td>52</td>
+				<td>17.04</td>
+				<td>1.19</td>
+				<td>10.54</td>
+				<td>0.69</td>
+				<td>1.75</td>
+				<td>6.19</td>
+				<td>0.73</td>
+				<td>2.46</td>
+				<td>51.80</td>
+				<td>33.04</td>
+				<td>72.73</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #DCFFDC; font-weight: bold;">6</td>
+				<td style="background-color: #DCFFDC; font-weight: bold;">이대성</td>
+				<td>50</td>
+				<td>17.00</td>
+				<td>3.94</td>
+				<td>2.86</td>
+				<td>0.84</td>
+				<td>0.12</td>
+				<td>4.58</td>
+				<td>1.50</td>
+				<td>3.34</td>
+				<td>45.44</td>
+				<td>35.89</td>
+				<td>83.08</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #9DCFFF; font-weight: bold;">7</td>
+				<td style="background-color: #9DCFFF; font-weight: bold;">허웅</td>
+				<td>54</td>
+				<td>16.70</td>
+				<td>4.24</td>
+				<td>2.69</td>
+				<td>0.80</td>
+				<td>0.09</td>
+				<td>3.56</td>
+				<td>2.15</td>
+				<td>3.15</td>
+				<td>46.18</td>
+				<td>35.47</td>
+				<td>85.86</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #9DCFFF; font-weight: bold;">8</td>
+				<td style="background-color: #9DCFFF; font-weight: bold;">라숀 토마스</td>
+				<td>43</td>
+				<td>16.63</td>
+				<td>1.81</td>
+				<td>9.30</td>
+				<td>1.60</td>
+				<td>1.14</td>
+				<td>6.74</td>
+				<td>0.00</td>
+				<td>3.14</td>
+				<td>52.63</td>
+				<td>0.0</td>
+				<td>67.84</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #9DCFFF; font-weight: bold;">9</td>
+				<td style="background-color: #9DCFFF; font-weight: bold;">아셈 마레이</td>
+				<td>53</td>
+				<td>16.40</td>
+				<td>3.21</td>
+				<td>13.47</td>
+				<td>1.77</td>
+				<td>0.66</td>
+				<td>6.60</td>
+				<td>0.06</td>
+				<td>3.02</td>
+				<td>51.01</td>
+				<td>21.43</td>
+				<td>52.46</td>
+
+			</tr>
+
+			<tr>
+				<td style="background-color: #9DCFFF; font-weight: bold;">10</td>
+				<td style="background-color: #9DCFFF; font-weight: bold;">최준용</td>
+				<td>54</td>
+				<td>15.98</td>
+				<td>3.54</td>
+				<td>5.81</td>
+				<td>0.83</td>
+				<td>1.11</td>
+				<td>4.17</td>
+				<td>1.61</td>
+				<td>2.81</td>
+				<td>45.55</td>
+				<td>35.22</td>
+				<td>71.03</td>
+
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+	</article>
+
+
+<script type="text/javascript">
+	
+alert("요번 SK나이츠 선수들 그리고 구단 관계자 분들 우승축하드립니다!!!!!!");
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="ftr" style="text-align: center;">
+		<div>
+			
+			<h4 id="sub">농구의 재미와 지식을 찾을수 있는 사이트</h4>
+		</div>
+
+		 <br><br>
+
+		<div id="num">
+			010-1234-5678 <br>	농구 있네
+		</div>
+
+		<br><br>
+
+		<div id="add">
+			 / 대표자 : 전창현 /업체명 : 농구 있네
+		</div>
+		<div id="right">COPYRIGHT(C) All RIGHTS RESERVED. <em>Designed by 전창현</em></div>
+
+		<br><br><br><br>
+	</footer>
+</body>
+</html>

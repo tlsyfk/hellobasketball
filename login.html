@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#first { padding: 0px 0px 00px 1700px; word-spacing: 20pt; font-weight: bold;}
+		#second {font-size: 22px; color: black;    padding: 1px 0px 55px 560px; font-weight: 700;  text-decoration: none; position: relative; display:flex; word-spacing: 100pt;}
+		 a {text-decoration: none; color: black; float: center;   }
+
+		
+
+		header {text-align: center; font-size: 20px; padding:0px;  margin-right: 35%; margin-left: 35%;}
+		header a:hover {color: orange; text-decoration: blink; transition: all.8s; }
+		#first a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .5s ease-out;
+		}
+		#first a:hover {color: orange; text-decoration: none; transition: all.4s;}
+		#second a:hover {color: orange; text-decoration: none; transition: all.50s; }
+		#second a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; transform: 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+		header a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+
+
+		h3 {text-align: center;}
+		#a {text-align: center;}
+
+
+
+		div #a {background-color: #B2EBF4;  padding-bottom: 350px; padding-top: 100px; }
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+	
+
+<header>
+	<table>
+		<tr>
+			<td>
+				<a href="main.html"><img src="img/농구있네로고.png" width="200" style="margin: 0px 0px 0px 20px;"></a>
+			</td>
+		
+		
+			<td>
+				<a href="main.html"><h1>농구 있네</h1></a>
+
+			</td>
+
+		</tr>
+	</table>
+
+
+
+</header>
+
+	<nav>
+	<table id="first">
+	<tr id="abc">
+		<td>
+		<a href="login.html">로그인</a>
+		<a href="sign.html">회원가입</a>
+
+		</td>
+	
+	</tr>
+	</table>
+
+	<table id="second">
+
+	<tr>
+		<td>
+			<a href="introduce.html">인사말</a>	 
+		
+
+		
+			<a href="term.html">농구용어</a>	 
+		
+
+		
+			<a href="score.html">프로리그성적</a>	 
+		
+
+		
+		
+			<a href="hilight.html">하이라이트</a>	 
+
+		</td>
+
+	</tr>
+
+
+	</table>
+</nav>
+
+	<div>
+	<form method="post" action="form_app.js" id="a">
+		
+			<legend style="font-size: 24pt; margin-bottom: 30px;">로그인</legend>
+			아이디 : <input type="text" name="id"><br>
+			패스워드 : <input type="password" name="pw">
+
+			<p>
+				<strong>주의할점</strong> : 1.로그인이 5회이상 틀리면 휴대폰인증 및 이메일 인증을 해야합니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				2.아이디 휴면계정은 이메일 및 휴대폰으로 인증하셔야 합니다.
+
+				<br><br><br>
+				<input type="submit" value="로그인" >
+				<input type="reset" value="다시입력">
+			</p>
+</div>
+
+
+<footer class="ftr" style="text-align: center; margin-top: 150px;">
+		<div>
+			
+			<h4 id="sub">농구의 재미와 지식을 찾을수 있는 사이트</h4>
+		</div>
+
+		 <br><br>
+
+		<div id="num">
+			010-1234-5678 <br>	농구 있네
+		</div>
+
+		<br><br>
+
+		<div id="add">
+			 / 대표자 : 전창현 /업체명 : 농구 있네
+		</div>
+		<div id="right">COPYRIGHT(C) All RIGHTS RESERVED. <em>Designed by 전창현</em></div>
+
+		<br><br><br><br>
+	</footer>
+		
+</body>
+</html>
