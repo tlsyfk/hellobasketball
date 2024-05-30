@@ -1,10 +1,458 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome to HelloBasketball</title>
+	<title>main</title>
+	
+	<style type="text/css">
+		
+		
+		#first { padding: 0px 0px 00px 1700px; word-spacing: 20pt; font-weight: bold; }
+		#second {font-size: 22px; color: black;    padding: 1px 0px 20px 560px; font-weight: 700;  text-decoration: none; position: relative; display:flex; word-spacing: 100pt;}
+		 a {text-decoration: none; color: black; float: center;   }
+
+		
+
+		header {text-align: center; font-size: 20px; padding:0px;  margin-right: 35%; margin-left: 35%;}
+		header a:hover {color: orange; text-decoration: blink; transition: all.8s; }
+		#first a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .5s ease-out;
+		}
+		#first a:hover {color: orange; text-decoration: none; transition: all.4s;}
+		#second a:hover {color: orange; text-decoration: none; transition: all.50s; }
+		#second a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; transform: 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+		header a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+		#aa{ padding: 20px 50px 20px 1300px; font-size: 24pt;}
+
+		#aa a:hover {color: orange; text-decoration: blink; transition: all.50s; }
+
+		#aa a::after
+		{
+			content: ""; position: absolute; bottom: 0; left: 30%; transform: 
+			width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+		}
+
+
+		hr {margin-left: 25%; margin-right: 23%;}
+
+
+
+
+* {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+[name="slide"] {display:none;}
+.slidebox {max-width:1000px;width:100%;margin:0 auto;text-align:center;}
+.slidebox img {max-width:100%;}
+.slidebox .slidelist {
+	white-space:nowrap;
+	font-size:0;
+	overflow:hidden;
+}
+.slidebox .slideitem {
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	transition:all .35s;
+}
+.slidebox .slideitem label {
+	position:absolute;
+	z-index:1;
+	top:50%;
+	transform:translateY(-50%);
+	padding:20px;
+	border-radius:50%;
+	cursor:pointer;
+}
+label.left {
+	left:20px;
+	background-color:#5F5F5F;
+	background-image:url('img/left-arrow.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+label.right {
+	right:20px;
+	background-color:#5F5F5F;
+	background-image:url('img/right-arrow.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:30px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+.paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+@keyframes slide01 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:-300%;}
+	98% {left:-300%;}
+	100% {left:0%;}
+}
+@keyframes slide02 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide03 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide04 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:300%;}
+	48% {left:300%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+
+
+====================================================================================================================
+
+
+* {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+[name="slide1"] {display:none;}
+.slidebox1 {max-width:1000px;width:100%;margin:0 auto;text-align:center;}
+.slidebox1 img {max-width:100%;}
+.slidebox1 .slidelist1 {
+	white-space:nowrap;
+	font-size:0;
+	overflow:hidden;
+}
+.slidebox1 .slideitem1 {
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	transition:all .35s;
+}
+.slidebox1 .slideitem1 label {
+	position:absolute;
+	z-index:1;
+	top:50%;
+	transform:translateY(-50%);
+	padding:20px;
+	border-radius:50%;
+	cursor:pointer;
+}
+label.left1 {
+	left:20px;
+	background-color:#5F5F5F;
+	background-image:url('img/left-arrow.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+label.right2 {
+	right:20px;
+	background-color:#5F5F5F;
+	background-image:url('img/right-arrow.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:30px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+.paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide011"]:checked ~ .slidelist1 .slideitem1 {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide022"]:checked ~ .slidelist1 .slideitem1 {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide033"]:checked ~ .slidelist1 .slideitem1 {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide044"]:checked ~ .slidelist1 .slideitem1 {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+@keyframes slide011 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:-300%;}
+	98% {left:-300%;}
+	100% {left:0%;}
+}
+@keyframes slide022 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide033 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide044 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:300%;}
+	48% {left:300%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+
+
+
+
+	</style>
 </head>
 <body>
-    <h1>Hello, Basketball!</h1>
+
+<header>
+	<table>
+		<tr>
+			<td>
+				<a href="main.html"><img src="img/농구있네로고.png" width="200" style="margin: 0px 0px 0px 20px;"></a>
+			</td>
+		
+		
+			<td>
+				<a href="main.html"><h1>농구 있네</h1></a>
+
+			</td>
+
+		</tr>
+	</table>
+
+
+
+</header>
+
+	<nav>
+	<table id="first">
+	<tr id="abc">
+		<td>
+		<a href="login.html">로그인</a>
+		<a href="sign.html">회원가입</a>
+
+		</td>
+	
+	</tr>
+	</table>
+
+	<table id="second">
+
+	<tr>
+		<td>
+			<a href="introduce.html" >인사말</a>	 
+		
+
+		
+			<a href="term.html">농구용어</a>	 
+		
+
+		
+			<a href="score.html">프로리그성적</a>	 
+		
+
+		
+		
+			<a href="hilight.html">하이라이트</a>	 
+
+		</td>
+
+	</tr>
+
+
+	</table>
+</nav>
+<hr>
+<article>
+
+<div class="slidebox" style="margin-top: 28px; margin-bottom: 28px;">
+	<input type="radio" name="slide" id="slide01" checked>
+	<input type="radio" name="slide" id="slide02">
+	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
+	<ul class="slidelist">
+		<li class="slideitem">
+			<div>
+				<label for="slide04" class="left"></label>
+				<label for="slide02" class="right"></label>
+				<a href="hilight.html#kim" ><img src="img/김선형.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem">
+			<div>
+				<label for="slide01" class="left"></label>
+				<label for="slide03" class="right"></label>
+				<a href="hilight.html#huhun" id="#hight2"><img src="img/허훈.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem">
+			<div>
+				<label for="slide02" class="left"></label>
+				<label for="slide04" class="right"></label>
+				<a href="hilight.html#lee" id="#hight3"><img src="img/이정현.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem">
+			<div>
+				<label for="slide03" class="left"></label>
+				<label for="slide01" class="right"></label>
+				<a href="hilight.html#huoung" id="#hight4"><img src="img/허웅2.jpg"></a>
+			</div>
+		</li>
+	</ul>
+
+</div>
+
+		<hr>
+		<h3 style="text-align: center; padding: 100px 0px 0px 0px;">농구 용품</h3>
+		
+		
+
+
+
+
+<div class="slidebox1">
+	<input type="radio" name="slide1" id="slide011" checked>
+	<input type="radio" name="slide1" id="slide022">
+	<input type="radio" name="slide1" id="slide033">
+	<input type="radio" name="slide1" id="slide044">
+	<ul class="slidelist1">
+		<li class="slideitem1">
+			<div>
+				<label for="slide044" class="left1"></label>
+				<label for="slide022" class="right2"></label>
+				<a href="order.html"><img src="img/스타공.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem1">
+			<div>
+				<label for="slide011" class="left1"></label>
+				<label for="slide033" class="right2"></label>
+				<a href="order.html"><img src="img/손목보호대.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem1">
+			<div>
+				<label for="slide022" class="left1"></label>
+				<label for="slide044" class="right2"></label>
+				<a href="order.html"><img src="img/조던 농구화.jpg"></a>
+			</div>
+		</li>
+		<li class="slideitem1">
+			<div>
+				<label for="slide033" class="left1"></label>
+				<label for="slide011" class="right2"></label>
+				<a href="order.html"><img src="img/스포츠토시.jpg"></a>
+			</div>
+		</li>
+	</ul>
+	
+</div>
+
+<div>	
+<a href="order.html" id="aa">주문하기</a>
+<br><br><br><br>
+</div>
+
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="ftr" style="text-align: center;">
+		<div>
+			
+			<h4 id="sub">농구의 재미와 지식을 찾을수 있는 사이트</h4>
+		</div>
+
+		 <br><br>
+
+		<div id="num">
+			010-1234-5678 <br>	농구 있네
+		</div>
+
+		<br><br>
+
+		<div id="add">
+			 / 대표자 : 전창현 /업체명 : 농구 있네
+		</div>
+		<div id="right">COPYRIGHT(C) All RIGHTS RESERVED. <em>Designed by 전창현</em></div>
+
+		<br><br><br><br>
+	</footer>
+
+
+
+
+	
+
 </body>
+
 </html>
