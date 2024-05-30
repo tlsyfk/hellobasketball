@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> Order Page </title>
+
+<style type="text/css">
+        #first { padding: 0px 0px 0px 1700px; word-spacing: 20pt; font-size: 12pt; font-weight: bold;}
+        #second {font-size: 22px; color: black;    padding: 1px 0px 50px 560px; font-weight: 700;  text-decoration: none; position: relative; display:flex; word-spacing: 100pt;}
+         a {text-decoration: none; color: black; float: center;   }
+         #butt1 {margin: 0px 0px 0px 0px;}
+
+         .ftr{font-size: 12pt;}
+        
+
+        header {text-align: center; font-size: 20px }
+        header a:hover {color: orange; text-decoration: blink; transition: all.4s; }
+        #first a::after
+        {
+            content: ""; position: absolute; bottom: 0; left: 30%; 
+            width: 0; height: 4px; background: #f1c40f; transition: all .5s ease-out;
+        }
+        #first a:hover {color: orange; text-decoration: none; transition: all.4s;}
+        #second a:hover {color: orange; text-decoration: none; transition: all.50s; }
+        #second a::after
+        {
+            content: ""; position: absolute; bottom: 0; left: 30%; transform: 
+            width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+        }
+        header a::after
+        {
+            content: ""; position: absolute; bottom: 0; left: 30%; 
+            width: 0; height: 4px; background: #f1c40f; transition: all .4s ease-out;
+        }
+      
+      
+      article {background-color: #BDBDBD; margin-left: 20%; margin-right: 20%; padding-bottom: 50px; }
+
+
+        
+
+
+</style>
+
+
+<body id="order">
+
+
+<header>
+    <table>
+        <tr>
+            <td>
+                <a href="main.html"><img src="img/농구있네로고.png" width="200" style="margin: 0px 0px 0px 680px;"></a>
+            </td>
+        
+        
+            <td>
+                <a href="main.html"><h1>농구 있네</h1></a>
+
+            </td>
+
+        </tr>
+    </table>
+
+
+
+<nav>
+    <table id="first">
+    <tr id="abc">
+        <td>
+        <a href="login.html">로그인</a>
+        <a href="sign.html">회원가입</a>
+
+        </td>
+    
+    </tr>
+    </table>
+
+    <table id="second">
+
+    <tr>
+
+        <td></td>
+
+        <td>
+            <a href="introduce.html">인사말</a>   
+        
+
+        
+            <a href="term.html">농구용어</a>     
+        
+
+        
+            <a href="score.html">프로리그성적</a>  
+        
+
+        
+        
+            <a href="hilight.html">하이라이트</a>     
+
+        </td>
+
+    </tr>
+
+
+    </table>
+</nav>
+
+
+
+
+<article>
+<div class="head" style="text-align: center; font-size: 25pt; letter-spacing: 28px; color:#F6F6F6 " > 농구용품 </div>
+<form action="">
+    <p style="text-align: center; font-size: 20pt;" > 주문서 </p>
+    <table style="padding: 1px 50px 20px 400px;">
+        <tr> <th> 물건 명</th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>
+        <tr>
+            <td> STAR 공 </td> <td> 27,000원 </td>
+            <td> <input type="text" id="sel1" size= "2" value="0" onclick="this.select();" /> </td>
+            <td> <input type="text" id="totalsel1" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 손목 보호대 </td> <td> 21,000원 </td>
+            <td> <input type="text" id="sel2" size= "2" value="0" onclick="this.select();" /> </td>
+            <td> <input type="text" id="totalsel2" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 조던 농구화 </td> <td> 28,000원 </td>
+            <td> <input type="text" id="sel3" size= "2" value="0" onclick="this.select();" /> </td>
+            <td> <input type="text" id="totalsel3" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 스포츠 토시 </td> <td> 28,000원 </td>
+            <td> <input type="text" id="sel4" size= "2" value="0" onclick="this.select();" /> </td>
+            <td> <input type="text" id="totalsel4" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 합계 </td> <td> &nbsp; </td>
+            <td> <input type="text" id="totalNumber" size= "2" value="0"/> </td>
+            <td> <input type="text" id="totalprice" size= "6" value="0"/> 원</td>
+        </tr>
+     <br>
+     <tr>
+        <td>
+    <input type="button" value="합계계산" id="butt1" onclick="updateAll();" />
+    <td>
+    <input type="reset" value="초기화" id="butt1">
+    </td>
+    <td>    
+    <input type="submit" value="주문하기" id="butt1">
+    </td>
+    </tr>
+    </table>
+</form>
+
+</article>
+
+
+<script type="text/javascript">
+    
+    function updateAll()
+    {
+
+    var n1 = document.getElementById("sel1").value;
+    var n2 = document.getElementById("sel2").value;
+    var n3 = document.getElementById("sel3").value;
+    var n4 = document.getElementById("sel4").value;
+
+    var p1 = 27000 * n1;
+    var p2 = 21000 * n2;
+    var p3 = 28000 * n3;
+    var p4 = 28000 * n4;
+
+
+    document.getElementById("totalsel1").value = p1;
+    document.getElementById("totalsel2").value = p2;
+    document.getElementById("totalsel3").value = p3;
+    document.getElementById("totalsel4").value = p4;
+
+
+    var totalNumber = parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4)
+    document.getElementById("totalNumber").value = totalNumber;
+    var totalprice = p1 + p2 + p3 + p4;
+    document.getElementById("totalprice").value = totalprice;
+
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+<footer class="ftr" style="text-align: center; padding: 150px 0px 0px 0px;">
+        <div>
+            
+            <h4 id="sub">농구의 재미와 지식을 찾을수 있는 사이트</h4>
+        </div>
+
+         <br><br>
+
+        <div id="num">
+            010-1234-5678 <br>  농구 있네
+        </div>
+
+        <br><br>
+
+        <div id="add">
+             / 대표자 : 전창현 /업체명 : 농구 있네
+        </div>
+        <div id="right">COPYRIGHT(C) All RIGHTS RESERVED. <em>Designed by 전창현</em></div>
+
+        <br><br><br><br>
+    </footer>
+</body>
+</html>
